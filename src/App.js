@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { ReactComponent as Hamburger } from './assets/svg/hamburger.svg';
+
 import Navbar from './components/NavBar';
 import Home from './components/Home';
 import Menu from './components/Menu';
 import Favourites from './components/Favourites';
 import RandomMeal from './components/RandomMeal';
 import About from './components/About';
+
+import { ReactComponent as Hamburger } from './assets/svg/hamburger.svg';
+
 import './App.css';
 import './index.css';
 
