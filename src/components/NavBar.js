@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 import { ReactComponent as Cross } from '../assets/svg/crossIcon.svg';
 
-function Navbar(props) {
+const Navbar=(props)=> {
     const { toggleHamburger } = props;
 
     return (

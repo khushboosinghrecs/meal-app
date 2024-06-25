@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
+
 import Button from "./Button";
-
-
-
 
 const MealItem = ({ meal, isFavorite, toggleFavorite }) => {
   const handleToggleFavorite = () => {
