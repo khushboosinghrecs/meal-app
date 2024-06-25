@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ReactComponent as FavouritesIcon } from '../assets/svg/favourite.svg'
 import { ReactComponent as RemoveFavouritesIcon } from '../assets/svg/removeFavourite.svg'
 
