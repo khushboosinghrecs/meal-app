@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import Navbar from './components/NavBar';
-import Home from './components/Home';
-import Menu from './components/Menu';
-import Favourites from './components/Favourites';
-import RandomMeal from './components/RandomMeal';
-import About from './components/About';
+import Home from './container/HomePage';
+import Menu from './container/MenuPage';
+import Favourites from './container/FavouritesPage';
+import RandomMeal from './container/RandomMeal';
+import About from './container/AboutPage';
+import Category from './container/CategoryPage'
 
 import { ReactComponent as Hamburger } from './assets/svg/hamburger.svg';
 
@@ -25,9 +26,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/menu/:categoryName" element={<Category />} />
           <Route path="/favourites" element={<Favourites />} />
           <Route path="/random-meal" element={<RandomMeal />} />
           <Route path="/about" element={<About />} />
+       
         </Routes>
       </div>
       {isNav ? (
